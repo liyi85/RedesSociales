@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">RedesSociales</string>
+    <string name="usuario">Nombre de Usuario</string>
+    <string name="correo">usuario@nextuniversity.com</string>
+    <string name="inicio">Inicio</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="google">Google Plus</string>
+    <string name="twitter">Twitter</string>
+
+    <string-array name="compartir">
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Instagram</item>
+        <item>Google Plus</item>
+        <item>Whatsapp</item>
+        <item>Messenger</item>
+        <item>SMS</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">BIENVENIDO A TUS REDES SOCIALES</string>
+    <string name="description">Aqui podras encontrar todas tus redes sociles en un solo lugar.</string>
+
+    <string name="open_drawer">Open navigation drawer</string>
+    <string name="close_drawer">Close navigation drawer</string>
+
+
+</resources>
