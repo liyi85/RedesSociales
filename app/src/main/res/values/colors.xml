@@ -7,14 +7,14 @@
     <color name="colorPrimaryFacebook">#3B5998</color>
     <color name="colorPrimaryDarkFacebook">#3B42AF</color>
 
-    <color name="colorPrimaryInstagram">#3B5998</color>
-    <color name="colorPrimaryDarkInstagram">#5348EE</color>
+    <color name="colorPrimaryInstagram">#4c68d7</color>
+    <color name="colorPrimaryDarkInstagram">#3A4FA4</color>
 
     <color name="colorPrimaryGoogle">#d34836</color>
-    <color name="colorPrimaryDarkGoogle">#EA3044</color>
+    <color name="colorPrimaryDarkGoogle">#A03729</color>
 
     <color name="colorPrimaryTwitter">#55acee</color>
-    <color name="colorPrimaryDarkTwitter">#4270D7</color>
+    <color name="colorPrimaryDarkTwitter">#4387BB</color>
 
 
     <color name="colorGray">#DFDFDF</color>

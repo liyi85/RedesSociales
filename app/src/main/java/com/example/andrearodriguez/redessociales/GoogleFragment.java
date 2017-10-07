@@ -7,13 +7,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+/**
+ * Created by andrearodriguez on 10/7/17.
+ */
 
-public class MainFragment extends Fragment {
+public class GoogleFragment extends Fragment {
 
-    @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.app_bar_main, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.app_bar_with_tabs, container, false);
     }
 
     @Override
@@ -26,8 +30,8 @@ public class MainFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         if (getActivity() instanceof MainActivity) {
             MainActivity activity = (MainActivity) getActivity();
-            activity.updateView(getString(R.string.redes), (getString(R.string.inicio)), 0);
-            activity.navigationView.setCheckedItem(R.id.nav_home);
+            activity.updateView(getString(R.string.redes), (getString(R.string.google)), 3);
+            activity.navigationView.setCheckedItem(R.id.nav_google);
         }
     }
 }

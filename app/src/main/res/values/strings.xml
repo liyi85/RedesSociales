@@ -7,6 +7,7 @@
     <string name="instagram">Instagram</string>
     <string name="google">Google Plus</string>
     <string name="twitter">Twitter</string>
+    <string name="redes">Mis Redes Sociales</string>
 
     <string-array name="compartir">
         <item>Facebook</item>
@@ -18,13 +19,11 @@
         <item>SMS</item>
     </string-array>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="welcome">BIENVENIDO A TUS REDES SOCIALES</string>
-    <string name="description">Aqui podras encontrar todas tus redes sociles en un solo lugar.</string>
-
     <string name="open_drawer">Open navigation drawer</string>
     <string name="close_drawer">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
