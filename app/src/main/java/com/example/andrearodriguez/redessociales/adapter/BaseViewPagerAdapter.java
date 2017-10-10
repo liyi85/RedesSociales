@@ -14,11 +14,9 @@ public class BaseViewPagerAdapter extends FragmentStatePagerAdapter {
 
     private String[] tabs;
 
-
     public BaseViewPagerAdapter(FragmentManager manager, String[] tabs) {
         super(manager);
         this.tabs = tabs;
-
     }
 
     @Override

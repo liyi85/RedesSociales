@@ -12,11 +12,7 @@ import android.widget.TextView;
 public class BaseFragment extends Fragment {
 
     private String name;
-
     private static final String ARG_NAME = "name";
-
-
-
 
     public static BaseFragment getInstance(String name) {
         BaseFragment fragment = new BaseFragment();
@@ -27,8 +23,6 @@ public class BaseFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
-
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,7 +46,5 @@ public class BaseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ((TextView) view.findViewById(R.id.text_name)).setText(this.name);
-
-
     }
 }

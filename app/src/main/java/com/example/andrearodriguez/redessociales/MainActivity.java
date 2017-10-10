@@ -47,8 +47,6 @@ public class MainActivity extends AppCompatActivity
 
     }
 
-
-
     public void updateView(String title, String subtitle, int id) {
 
         final int colorPrimaryInicio = ContextCompat.getColor(getBaseContext(), R.color.colorPrimary);
@@ -98,8 +96,6 @@ public class MainActivity extends AppCompatActivity
                 if(linearLayout != null){
                     linearLayout.setBackgroundDrawable(bgColor0);
                 }
-
-
                 break;
 
             case 1:
@@ -236,7 +232,6 @@ public class MainActivity extends AppCompatActivity
 
         SubMenu compartir = menu.addSubMenu(1,5,1, R.string.compartir);
 
-
         SubMenu configurar= menu.addSubMenu(2,6,2, R.string.configuracion);
 
         return true;
@@ -289,7 +284,4 @@ public class MainActivity extends AppCompatActivity
         
         return super.onOptionsItemSelected(item);
     }
-
-
-
 }

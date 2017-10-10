@@ -1,7 +1,6 @@
 package com.example.andrearodriguez.redessociales;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -20,17 +19,14 @@ public class DialogoCompartir  extends DialogFragment {
         final String[] items = {"Facebook", "Instagram", "Google", "Twitter", "SMS", "Whatsapp"};
         final boolean[] checkedItem = {false, false, false, false, false, false};
 
-
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
 
         builder.setMultiChoiceItems(items, checkedItem, new DialogInterface.OnMultiChoiceClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-              //  if (isChecked)
 
-                    //Toast.makeText(getContext(),"" + items[which], Toast.LENGTH_SHORT).show();
             }
-        }).setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        }).setPositiveButton("COMPARTIR", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
 
@@ -51,7 +47,7 @@ public class DialogoCompartir  extends DialogFragment {
             }
         });
 
-        builder.setNegativeButton("Cancelar", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("CANCELAR", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
@@ -59,11 +55,6 @@ public class DialogoCompartir  extends DialogFragment {
         });
 
         return builder.create();
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
     }
 
 }
