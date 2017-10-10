@@ -13,38 +13,22 @@ public class BaseFragment extends Fragment {
 
     private String name;
 
-    private String description;
-
     private static final String ARG_NAME = "name";
 
-    private static final String ARG_DESCRIPTION = "description";
 
-    public static BaseFragment getInstance(String name, String description) {
+
+
+    public static BaseFragment getInstance(String name) {
         BaseFragment fragment = new BaseFragment();
 
         Bundle args = new Bundle();
         args.putString(ARG_NAME, name);
-        args.putString(ARG_DESCRIPTION, description);
 
         fragment.setArguments(args);
         return fragment;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,7 +37,7 @@ public class BaseFragment extends Fragment {
         Bundle args = getArguments();
         if (args != null) {
             name = args.getString(ARG_NAME);
-            description = args.getString(ARG_DESCRIPTION);
+
         }
     }
 
@@ -68,6 +52,7 @@ public class BaseFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ((TextView) view.findViewById(R.id.text_name)).setText(this.name);
-        ((TextView) view.findViewById(R.id.text_description)).setText(this.description);
+
+
     }
 }
