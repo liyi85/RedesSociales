@@ -21,8 +21,7 @@ import com.example.andrearodriguez.redessociales.adapter.BaseViewPagerAdapter;
 
 public class InstagramFragment extends Fragment {
 
-    private String[] tabs = {"BUSCAR", "PUBLICAR", "FAVORITOS"};
-    private int[] img = {R.drawable.ic_news, R.drawable.ic_solicitudes, R.drawable.ic_mundo};
+    private String[] tabs = {"Buscar", "Publicar", "Favoritos"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

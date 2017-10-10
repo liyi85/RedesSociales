@@ -10,22 +10,22 @@
 
         <item
             android:id="@+id/nav_facebook"
-            android:icon="@drawable/logofacebook"
+            android:icon="@drawable/ic_facebook"
             android:title="@string/facebook" />
 
         <item
             android:id="@+id/nav_instagram"
-            android:icon="@drawable/logoinstagram"
+            android:icon="@drawable/ic_instagram"
             android:title="@string/instagram" />
 
         <item
             android:id="@+id/nav_google"
-            android:icon="@drawable/logogoogle"
+            android:icon="@drawable/ic_google"
             android:title="@string/google" />
 
         <item
             android:id="@+id/nav_twitter"
-            android:icon="@drawable/twiterrblack"
+            android:icon="@drawable/ic_twitter"
             android:title="@string/twitter" />
 
     </group>

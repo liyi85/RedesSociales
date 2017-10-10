@@ -17,11 +17,10 @@ public class DialogoConfirmar extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.TemaDialogos);
 
         Bundle mArgs = getArguments();
         final String myValue = mArgs.getString("seleccion");
-        final String [] palabras = myValue.split(" ");
 
         builder.setTitle("Confirmación");
         builder.setMessage("Compartir esta aplicacion a traves de los medios seleccionados?");
@@ -29,10 +28,7 @@ public class DialogoConfirmar extends DialogFragment {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.cancel();
-                Toast.makeText(getContext(),"Compartiste esta aplicación a traves de: " + "", Toast.LENGTH_SHORT).show();
-                for(int i = 0; i < palabras.length; i++){
-                    Toast.makeText(getContext(),"Compartiste esta aplicación a traves de: " + palabras[i], Toast.LENGTH_SHORT).show();
-                }
+                    Toast.makeText(getContext(),"Compartiste esta aplicación a traves de:" + myValue, Toast.LENGTH_SHORT).show();
 
             }
         });

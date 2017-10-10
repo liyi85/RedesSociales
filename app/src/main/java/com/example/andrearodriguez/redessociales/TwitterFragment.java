@@ -20,8 +20,7 @@ import com.example.andrearodriguez.redessociales.adapter.BaseViewPagerAdapter;
  */
 
 public class TwitterFragment extends Fragment {
-    private String[] tabs = {"NOTIFICACIONES", "MENSAJES", "BUSCAR"};
-    private int[] img = {R.drawable.ic_news, R.drawable.ic_solicitudes, R.drawable.ic_mundo};
+    private String[] tabs = {"Notificaciones", "Mensajes", "Buscar"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

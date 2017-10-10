@@ -20,7 +20,7 @@ import static com.example.andrearodriguez.redessociales.R.drawable.ic_news;
 
 public class FacebookFragment extends Fragment {
 
-    private String[] tabs = {"NOTICIAS", "SOLICITUDES", "MUNDO"};
+    private String[] tabs = {"Noticias", "Solicitudes",  "Notificacion"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

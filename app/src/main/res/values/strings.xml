@@ -19,16 +19,9 @@
         <item>SMS</item>
     </string-array>
 
-    <string-array name="imagenesFacebook">
-        <item>@drawable/ic_notifications</item>
-        <item>@drawable/ic_mundo</item>
-        <item>@drawable/ic_solicitudes</item>
-    </string-array>
-
     <string name="open_drawer">Open navigation drawer</string>
     <string name="close_drawer">Close navigation drawer</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="versionweb">Versión Web</string>
     <string name="compartir">Compartir</string>

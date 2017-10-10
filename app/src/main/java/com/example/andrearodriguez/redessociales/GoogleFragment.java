@@ -20,8 +20,7 @@ import com.example.andrearodriguez.redessociales.adapter.BaseViewPagerAdapter;
  */
 
 public class GoogleFragment extends Fragment {
-    private String[] tabs = {"APLICACIONES", "GRUPOS", "NOTIFICACIONES"};
-    private int[] img = {R.drawable.ic_news, R.drawable.ic_solicitudes, R.drawable.ic_mundo};
+    private String[] tabs = {"Colecciones", "Comunidades", "Notificaciones"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

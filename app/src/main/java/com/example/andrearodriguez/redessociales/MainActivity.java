@@ -1,5 +1,6 @@
 package com.example.andrearodriguez.redessociales;
 
+import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
@@ -225,14 +226,16 @@ public class MainActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {
 
         SubMenu versionweb = menu.addSubMenu(R.string.versionweb);
-        versionweb.add(0,1,0,R.string.facebook).setIcon(R.drawable.logofacebook);
-        versionweb.add(0,2,0,R.string.instagram).setIcon(R.drawable.logoinstagram);
-        versionweb.add(0,3,0,R.string.google).setIcon(R.drawable.logogoogle);
-        versionweb.add(0,4,0,R.string.twitter).setIcon(R.drawable.logotwiter);
+        versionweb.add(0,1,0,R.string.facebook).setIcon(R.drawable.ic_facebook);
+        versionweb.add(0,2,0,R.string.instagram).setIcon(R.drawable.ic_instagram);
+        versionweb.add(0,3,0,R.string.google).setIcon(R.drawable.ic_google);
+        versionweb.add(0,4,0,R.string.twitter).setIcon(R.drawable.ic_twitter);
 
         SubMenu compartir = menu.addSubMenu(1,5,1, R.string.compartir);
 
         SubMenu configurar= menu.addSubMenu(2,6,2, R.string.configuracion);
+
+        getMenuInflater().inflate(R.menu.menu, menu);
 
         return true;
     }
@@ -280,6 +283,12 @@ public class MainActivity extends AppCompatActivity
             case 5:
                 DialogoCompartir dialogo = new DialogoCompartir();
                 dialogo.show(getSupportFragmentManager(), "confirmación");
+                break;
+
+            case 6:
+                Intent intent = new Intent(this, ConfigurationActivity.class);
+                startActivity(intent);
+                break;
         }
         
         return super.onOptionsItemSelected(item);

@@ -19,7 +19,7 @@ public class DialogoCompartir  extends DialogFragment {
         final String[] items = {"Facebook", "Instagram", "Google", "Twitter", "SMS", "Whatsapp"};
         final boolean[] checkedItem = {false, false, false, false, false, false};
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext(), R.style.TemaDialogos);
 
         builder.setMultiChoiceItems(items, checkedItem, new DialogInterface.OnMultiChoiceClickListener() {
             @Override
@@ -33,7 +33,7 @@ public class DialogoCompartir  extends DialogFragment {
                 String seleccion = "";
                 for (int i = 0; i < checkedItem.length; i++) {
                     if (checkedItem[i])
-                        seleccion += " " + items[i];
+                        seleccion += "\n" + items[i];
                 }
 
                 DialogoConfirmar confirmar = new DialogoConfirmar();
